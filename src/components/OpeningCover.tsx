@@ -10,7 +10,12 @@ interface OpeningCoverProps {
   guestName?: string;
 }
 
-export function OpeningCover({ config, isOpen, onOpen, guestName }: OpeningCoverProps) {
+export function OpeningCover({
+  config,
+  isOpen,
+  onOpen,
+  guestName,
+}: OpeningCoverProps) {
   const [isOpening, setIsOpening] = useState(false);
 
   const handleOpenClick = () => {
@@ -64,7 +69,7 @@ export function OpeningCover({ config, isOpen, onOpen, guestName }: OpeningCover
           </div>
         )}
 
-        {/* Centered Golden Monogram Crest with Intertwined J & F */}
+        {/* Centered Golden Monogram Crest with J & F Monogram */}
         <div className="my-2 sm:my-3 flex items-center justify-center">
           <MonogramEmblem size="lg" />
         </div>

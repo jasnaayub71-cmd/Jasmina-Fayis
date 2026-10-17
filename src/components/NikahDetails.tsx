@@ -33,7 +33,7 @@ export function NikahDetails({ config }: NikahDetailsProps) {
         {/* Subtle Decorative Floral Background Corner */}
         <div className="absolute top-0 right-0 w-36 sm:w-48 opacity-15 pointer-events-none">
           <img
-            src="/src/assets/images/burgundy_wedding_florals_1791994721086.jpg"
+            src="/src/assets/images/burgundy_wedding_florals_jasmina_1792220812500.jpg"
             alt=""
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

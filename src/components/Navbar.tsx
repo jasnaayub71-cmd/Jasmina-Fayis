@@ -36,7 +36,7 @@ export function Navbar({ config, onOpenRSVP, onOpenCover }: NavbarProps) {
           {config.MONOGRAM_INITIALS || `${config.BRIDE_DISPLAY_NAME || "Jasmina"} & ${config.GROOM_DISPLAY_NAME || "Fayis"}`}
         </a>
 
-        {/* Zone 2: 4–5 clean single-line text navigation links */}
+        {/* Zone 2: Clean single-line text navigation links */}
         <nav className="hidden md:flex items-center gap-7 text-xs font-serif uppercase tracking-[0.18em] text-[#6b1024]">
           <a
             href="#welcome"
@@ -70,7 +70,7 @@ export function Navbar({ config, onOpenRSVP, onOpenCover }: NavbarProps) {
           </a>
         </nav>
 
-        {/* Zone 3: 1 primary action */}
+        {/* Zone 3: Actions */}
         <div className="flex items-center gap-3 shrink-0">
           <button
             onClick={onOpenCover}

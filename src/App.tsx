@@ -39,7 +39,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-parchment text-[#3f0712] relative selection:bg-[#741628] selection:text-[#fdfcf9] overflow-x-hidden">
-      {/* 1. Fullscreen Opening Cover */}
+      {/* 1. Fullscreen Opening Cover with unified circular floral monogram */}
       <OpeningCover
         config={config}
         isOpen={isCoverOpen}
@@ -67,17 +67,17 @@ export default function App() {
         />
       </div>
 
-      {/* Subtle Bottom Left Side Florals */}
+      {/* Subtle Bottom Left Side Florals with Jasmina & Fayis wedding card */}
       <div className="fixed -bottom-16 -left-12 w-44 sm:w-64 md:w-80 pointer-events-none z-10 opacity-70 transition-opacity duration-500">
         <img
-          src="/src/assets/images/burgundy_wedding_florals_1791994721086.jpg"
-          alt=""
+          src="/src/assets/images/burgundy_wedding_florals_jasmina_1792220812500.jpg"
+          alt="Jasmina & Fayis Wedding Floral Invitation Card"
           className="w-full h-auto object-contain filter drop-shadow-sm"
           referrerPolicy="no-referrer"
         />
       </div>
 
-      {/* 5. Navigation Bar (Customize option removed) */}
+      {/* 5. Navigation Bar */}
       <Navbar
         config={config}
         onOpenRSVP={() => setIsRSVPOpen(true)}
@@ -105,7 +105,7 @@ export default function App() {
           <div className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-[#cbaa55]" />
         </div>
 
-        {/* Section 4: Couple's Names & Parents Section */}
+        {/* Section 4: Couple's Names & Parents Section with matching circular floral monogram */}
         <CoupleSection config={config} />
 
         {/* Section 5: Wedding Countdown Timer */}
@@ -137,7 +137,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* Section 10: Footer & Thank You Message */}
+        {/* Section 10: Footer & Thank You Message with matching circular floral monogram */}
         <Footer
           config={config}
           onOpenCover={() => setIsCoverOpen(false)}
