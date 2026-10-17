@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-script: "Alex Brush", "Great Vibes", cursive;
+  --font-arabic: "Amiri", "Scheherazade New", serif;
+  --font-roman: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-burgundy-950: #2d040c;
+  --color-burgundy-900: #3f0712;
+  --color-burgundy-800: #520b1a;
+  --color-burgundy-700: #6b1024;
+  --color-burgundy-600: #84162e;
+  --color-burgundy-500: #9e1f3a;
+  --color-gold-600: #99752b;
+  --color-gold-500: #b38b39;
+  --color-gold-400: #cbaa55;
+  --color-gold-300: #dec177;
+  --color-gold-200: #edd79f;
+  --color-gold-100: #f8edd0;
+  --color-blush-50: #fef8f9;
+  --color-blush-100: #fcf1f3;
+  --color-blush-200: #f8dde2;
+  --color-ivory-50: #fdfcf9;
+  --color-ivory-100: #faf7f2;
+  --color-ivory-200: #f3ece0;
+}
+
+/* Subtle luxury parchment texture background */
+.bg-parchment {
+  background-color: #faf7f2;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(203, 170, 85, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 85% 85%, rgba(132, 22, 46, 0.03) 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.6) 0%, transparent 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #8a641f 0%, #cbaa55 50%, #99752b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-foil-border {
+  border-image: linear-gradient(to bottom right, #dec177, #99752b, #edd79f, #b38b39) 1;
+}
+
+.gold-shimmer-btn {
+  background: linear-gradient(135deg, #741628 0%, #520b1a 60%, #3f0712 100%);
+  box-shadow: 0 4px 20px -2px rgba(107, 16, 36, 0.35), 0 0 0 1px rgba(203, 170, 85, 0.4);
+}
+
+.gold-shimmer-btn:hover {
+  box-shadow: 0 6px 26px -2px rgba(107, 16, 36, 0.5), 0 0 0 1.5px rgba(222, 193, 119, 0.8);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f0e6;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbaa55;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #99752b;
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
