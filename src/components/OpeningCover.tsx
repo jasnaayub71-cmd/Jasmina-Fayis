@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Sparkles, Heart, ChevronDown } from "lucide-react";
 import { WeddingConfigType, formatWeddingDate, formatCoverDate } from "../config/weddingConfig";
 import { MonogramEmblem } from "./MonogramEmblem";
+import cornerRosesImg from "../assets/images/burgundy_corner_roses_1791994747122.jpg";
 
 interface OpeningCoverProps {
   config: WeddingConfigType;
@@ -39,7 +40,7 @@ export function OpeningCover({
       {/* Decorative Corner Florals - Top Left */}
       <div className="absolute -top-6 -left-6 w-52 sm:w-80 md:w-96 pointer-events-none z-10 opacity-95 transition-transform duration-700">
         <img
-          src="/src/assets/images/burgundy_corner_roses_1791994747122.jpg"
+          src={cornerRosesImg}
           alt="Burgundy Roses Botanical Corner"
           className="w-full h-auto object-contain filter drop-shadow-md"
           referrerPolicy="no-referrer"
@@ -49,7 +50,7 @@ export function OpeningCover({
       {/* Decorative Corner Florals - Bottom Right (Mirrored) */}
       <div className="absolute -bottom-10 -right-10 w-44 sm:w-72 md:w-84 pointer-events-none z-10 opacity-80 rotate-180 transition-transform duration-700">
         <img
-          src="/src/assets/images/burgundy_corner_roses_1791994747122.jpg"
+          src={cornerRosesImg}
           alt="Burgundy Roses Botanical Corner"
           className="w-full h-auto object-contain filter drop-shadow-md"
           referrerPolicy="no-referrer"

@@ -11,6 +11,8 @@ import { NikahDetails } from "./components/NikahDetails";
 import { QuranicVerse } from "./components/QuranicVerse";
 import { RSVPModal } from "./components/RSVPModal";
 import { Footer } from "./components/Footer";
+import cornerRosesImg from "./assets/images/burgundy_corner_roses_1791994747122.jpg";
+import weddingFloralsImg from "./assets/images/burgundy_wedding_florals_jasmina_1792220812500.jpg";
 
 export default function App() {
   const [config] = useState<WeddingConfigType>(INITIAL_WEDDING_CONFIG);
@@ -60,7 +62,7 @@ export default function App() {
       {/* Top Left Corner Floral Garland */}
       <div className="fixed -top-10 -left-10 w-48 sm:w-72 md:w-88 pointer-events-none z-10 opacity-90 transition-opacity duration-500">
         <img
-          src="/src/assets/images/burgundy_corner_roses_1791994747122.jpg"
+          src={cornerRosesImg}
           alt="Burgundy Roses Floral Frame"
           className="w-full h-auto object-contain filter drop-shadow-md"
           referrerPolicy="no-referrer"
@@ -70,7 +72,7 @@ export default function App() {
       {/* Subtle Bottom Left Side Florals with Jasmina & Fayis wedding card */}
       <div className="fixed -bottom-16 -left-12 w-44 sm:w-64 md:w-80 pointer-events-none z-10 opacity-70 transition-opacity duration-500">
         <img
-          src="/src/assets/images/burgundy_wedding_florals_jasmina_1792220812500.jpg"
+          src={weddingFloralsImg}
           alt="Jasmina & Fayis Wedding Floral Invitation Card"
           className="w-full h-auto object-contain filter drop-shadow-sm"
           referrerPolicy="no-referrer"
